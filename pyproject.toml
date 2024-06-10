@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "djangoshop"
+version = "0.1.0"
+description = "Test project for a Django grocery shop"
+authors = ["smintank <assbestmail@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Django = "^5.0.6"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
