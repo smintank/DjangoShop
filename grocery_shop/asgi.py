@@ -1,5 +1,5 @@
 """
-ASGI config for grocery_shop project.
+ASGI config for DjangoShop project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
