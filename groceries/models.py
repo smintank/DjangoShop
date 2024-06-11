@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.db import models
 
 
@@ -45,6 +46,7 @@ class Subcategory(BaseCategory):
 
 class Grocery(models.Model):
     name = models.CharField(max_length=100, verbose_name="Название")
+    slug = models.SlugField(max_length=100, unique=True)
     photo = models.ImageField(upload_to="products", verbose_name="Изображение")
     subcategory = models.ForeignKey(
         Subcategory, null=True, on_delete=models.SET_NULL, verbose_name="Подкатегория"
